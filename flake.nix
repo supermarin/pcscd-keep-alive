@@ -1,6 +1,6 @@
 {
   inputs.nixpkgs.url = github:nixos/nixpkgs;
-  outputs = self: inputs:
+  outputs = { self }@inputs:
     let
       system = "x86_64-linux";
       pkgs = inputs.nixpkgs.legacyPackages.${system};

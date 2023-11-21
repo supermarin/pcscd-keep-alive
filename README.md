@@ -18,7 +18,6 @@ inputs.pcscd-keep-alive.url = github:supermarin/pcscd-keep-alive;
 Then include the module:
 ``` nix
 nixosConfigurations.computer = inputs.nixpkgs.lib.nixosSystem {
-  system = "x86_64-linux";
   modules = [
     inputs.pcscd-keep-alive.nixosModules.pcscd-keep-alive
     # ...
